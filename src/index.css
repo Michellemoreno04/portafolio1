@@ -1,11 +1,11 @@
 
 
-body{
+/*body{
   background-image: url("imagenes/bg_matriz.jpg");
   background-size: cover;
   
 }
-
+*/
 .home{
   color: white;
 }
@@ -24,6 +24,7 @@ body{
   color: white;
   margin: 25px;
   font-size: 25px;
+  text-decoration: none;
 }
 .mifoto{
   display: flex;
@@ -228,6 +229,7 @@ width: 300px;
   padding: 15px;
   cursor: pointer;
   color:white;
+  backdrop-filter: blur(50px);
 }  
 .webs h4{
  color: #29F8F3;
@@ -237,12 +239,12 @@ width: 300px;
   box-shadow:  #29F8F3 5px 5px 25px 5px;
   color: white;
   transform: scale(1.1);
+  
 }                                                 
 .segundoPortal{
 
   width: 100%;
   height: 1300px;
-  background-color: #0E0E0E;
    
 }
 
@@ -317,6 +319,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-top: -300px;
 
 }
 .spanText{
@@ -377,7 +380,7 @@ font-size: 50px;
  .dominios{
   display: flex;
   flex-direction: column;
-  background-color:  #0E0E0E;
+  backdrop-filter:blur(25px);
   width: 100%;
   height: 500px;
 

@@ -146,7 +146,7 @@ const TiposDeWeb = ()=>{
           , agregarlos al carrito de compras y realizar transacciones seguras</p>
           </div>
           <div className="webs">
-          <h4>Notecias o revistas</h4>
+          <h4>Noticias o revistas</h4>
         <p> Estos sitios web ofrecen contenido periodístico, artículos de opinión y
            noticias sobre una variedad de temas. Pueden cubrir noticias locales, 
           internacionales, deportes, entretenimiento y más. Algunos también incluyen imágenes y videos.</p>
@@ -154,20 +154,7 @@ const TiposDeWeb = ()=>{
           
     </div>
    
-    <div>
-   <div className="img-continer">
-    <img src={ui_img} className="ui_img"/>
-    <abbr 
-    title="Las páginas estáticas son ideales cuando se necesita mostrar información constante que no cambia con frecuencia. "
-     className="tiposDePaginas">Dinamicas</abbr>
     
-    <img src={ui_img2} className="ui_img"/>
-    <abbr
-     title="Las páginas web dinámicas son mucho más interactivas y flexibles en comparación con las estáticas. Estas páginas se generan en tiempo real en función de diversos factores, como la interacción del usuario, la información proporcionada y los datos almacenados en una base de datos" 
-     className="tiposDePaginas">Estaticas</abbr>
-    </div>
-   
-   </div>
     </div>
   )
 }
