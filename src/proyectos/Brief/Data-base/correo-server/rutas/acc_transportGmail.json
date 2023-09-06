@@ -1,0 +1,10 @@
+{
+    "service":"gmail",
+    "auth":{
+        "type":"OAuth2",
+        "user":"michelmore05@gmail.com",
+        "clientId":"1030172446107-gpft07lcbvpicmo1rj3gge4pgi3vvs1l.apps.googleusercontent.com",
+        "clientSecret":"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",
+        "refreshToken":"1//04XyC8u5HYlAFCgYIARAAGAQSNwF-L9IrCRWUQ1Y_3zIemij3xOPS4SPsHBX90eLtQ8np6qVPtLwV_DT_1BcGyB0ZZIGWfvcXHUk"
+    }
+}

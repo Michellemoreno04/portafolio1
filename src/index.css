@@ -1,0 +1,394 @@
+
+
+body{
+  background-image: url("imagenes/bg_matriz.jpg");
+  background-size: cover;
+  
+}
+
+.home{
+  color: white;
+}
+.navegation{
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 255, 0.594);
+  width: 100%;
+  height: 90px;
+  margin-top: -10px;
+
+}
+
+/*opciones*/
+.Link{
+  color: white;
+  margin: 25px;
+  font-size: 25px;
+}
+.mifoto{
+  display: flex;
+  margin-top: 50px;
+  width: 800px;
+
+}
+.mifoto{
+	-webkit-animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.titulo{
+  display: flex;
+margin-top: 25px;
+  margin-right:90px;
+  color: yellow;
+  font-size: 30px;
+}
+.titulo h2{
+  display: flex;
+  margin-top: 200px;
+}
+.btn1{
+  position: absolute;
+  position: relative;
+  margin-top: 500px;
+right: 350px;
+  width: 300px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: yellow;
+  font-size: 25px;
+  cursor: pointer;
+}
+.btn1:hover{
+background-color:rgba(255, 255, 0, 0.934) ;
+color:blue;
+box-shadow: 10px 5px 20px 5px  white;
+}
+
+
+                               /*EL BACKGR DEL PORTAFOLIO EN PROYECTOS*/
+.titulo_del_portafolio{
+  color: cyan;
+  font-style: italic;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0.1px;
+}
+                   /*PROYECTOS*/
+.proyectos{
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+  border-radius: 10px;
+  margin-left: 25px;
+
+}
+                       
+.nombreDelJuego{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.portafolio_img{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 5px;
+border-radius: 10px;
+
+}
+.btn-para-jugar{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  background-color:#073ceaf7;
+  margin-left: 90px;
+  margin-top: 20px;
+cursor: pointer;
+}
+.btn-para-jugar:hover{
+  background-color: #073cead8;
+  transform: scale(1.2);
+} 
+                                    /*CALCULADORA*/
+.titulo-calculadora{
+  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+  padding: 20px;
+  margin-top: -10px;
+border-radius: 50px;
+}
+.calculadora{
+  width: 600px;
+  height: 700px;
+  border: solid black;
+  margin: 0 auto;
+ padding: 30px;
+ background-color: rgba(0, 0, 0, 0.888);
+ border-radius: 10px;
+}
+.resultado-calculado{
+width: 590px;
+height: 150px;
+margin-bottom: 50px;
+text-align: end;
+font-size: 50px;
+border-radius: 15px;
+
+}
+.resultado-calculado::placeholder{
+  font-size: 100px;
+text-align: end; /*para que se mueva a la derecha*/
+
+}
+.btn-calculadora{
+  width: 150px;
+  height: 100px;
+ margin-left: 5px;
+margin-bottom: 25px;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ font-size: 25px;
+ background-color: white;
+
+}
+.btn-calculadora:hover{
+  transform: scale(1.1);
+  border-radius: 5%;
+  background-color: rgba(240, 248, 255, 0.781);
+}
+.btn-operadores{
+width: 125px;
+height: 100px;
+background-color: chartreuse;
+margin-left: 10px;
+cursor: pointer;
+font-size: 25px;
+}
+.btn-operadores:hover{
+  background-color:white;
+  transform: scale(1.1);
+  border-radius: 5%;
+}
+.proyectos{
+    animation: roll-in-right 0.9s ease-out both;
+}
+
+ @keyframes roll-in-right {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+                                                                 /*segundo portal*/
+.tiposDeWeb{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: center;
+  }   
+.webs{
+width: 300px;
+  font-size: 25px;
+  border: #29F8F3 solid 1px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  color:white;
+}  
+.webs h4{
+ color: #29F8F3;
+ text-decoration:underline;
+  }        
+.webs:hover{
+  box-shadow:  #29F8F3 5px 5px 25px 5px;
+  color: white;
+  transform: scale(1.1);
+}                                                 
+.segundoPortal{
+
+  width: 100%;
+  height: 1300px;
+  background-color: #0E0E0E;
+   
+}
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+  
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #29F8F3;
+	font-size: 65px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(41,248,243,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(41,248,243,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(41,248,243,1); stroke-width: 3; }
+	100% {
+		fill: #29F8F3; stroke: rgba(41,248,243,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.tiposDePaginas{
+  
+  color: #29F8F3;
+  font-size: 50px;
+  text-decoration: underline;
+  cursor: pointer;
+  
+}
+.tiposDePaginas:hover{
+  text-decoration: none;
+}
+.img-continer{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+/*img animacion ui-img*/
+.ui_img{
+
+  margin-left: 100px;
+  width: 400px;
+  
+animation-name: latir; /*nombre de la animacion*/
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+@keyframes latir{
+
+  0%, 100% { /*aqui declara ssolo el tamaño que va a tener de 0 a 100%*/
+    transform: scale(1);
+}
+50% {
+  transform: scale(1.1);
+}
+}
+.creandoWeb{
+background-image: url('./imagenes/creandoWEb.jpg');
+background-repeat: no-repeat;
+background-size:cover;
+width: 100%;
+height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.spanText{
+  position: relative;
+  bottom: 65px;
+color: white;
+font-size: 50px;
+
+}
+.btn-creandoWeb {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all .2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: red;
+  cursor: pointer;
+ }
+ 
+ .btn-creandoWeb:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .btn-creandoWeb:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .btn-creandoWeb::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+ }
+ 
+ .btn-creandoWeb::after {
+  background-color: white;
+ }
+ 
+ .btn-creandoWeb:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+ }
+ .dominios{
+  display: flex;
+  flex-direction: column;
+  background-color:  #0E0E0E;
+  width: 100%;
+  height: 500px;
+
+ }
+ .dominio{
+ display: flex;
+position: relative;
+left: 200px;
+top: -100px;
+  font-size: 20px;
+  width: 1300px;
+  color: white;
+  
+ }
