@@ -6,6 +6,7 @@
   
 }
 */
+
 .home{
   color: white;
 }
@@ -57,37 +58,18 @@
             transform: scale(1);
   }
 }
+.primeraPortada{
+  display: flex;
+}
 
 .titulo{
-  display: flex;
-margin-top: 25px;
-  margin-right:90px;
-  color: yellow;
+  color:  #29F8F3;
   font-size: 30px;
 }
 .titulo h2{
   display: flex;
   margin-top: 200px;
 }
-.btn1{
-  position: absolute;
-  position: relative;
-  margin-top: 500px;
-right: 350px;
-  width: 300px;
-  height: 50px;
-  border-radius: 15px;
-  background-color: yellow;
-  font-size: 25px;
-  cursor: pointer;
-}
-.btn1:hover{
-background-color:rgba(255, 255, 0, 0.934) ;
-color:blue;
-box-shadow: 10px 5px 20px 5px  white;
-}
-
-
                                /*EL BACKGR DEL PORTAFOLIO EN PROYECTOS*/
 .titulo_del_portafolio{
   color: cyan;
@@ -256,7 +238,7 @@ svg text {
   
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
-	stroke: #29F8F3;
+	stroke: s;
 	font-size: 65px;
 }
 @keyframes stroke {
@@ -283,32 +265,8 @@ svg text {
 .tiposDePaginas:hover{
   text-decoration: none;
 }
-.img-continer{
 
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  
-}
-/*img animacion ui-img*/
-.ui_img{
 
-  margin-left: 100px;
-  width: 400px;
-  
-animation-name: latir; /*nombre de la animacion*/
-animation-duration: 3s;
-animation-iteration-count: infinite;
-}
-@keyframes latir{
-
-  0%, 100% { /*aqui declara ssolo el tamaño que va a tener de 0 a 100%*/
-    transform: scale(1);
-}
-50% {
-  transform: scale(1.1);
-}
-}
 .creandoWeb{
 background-image: url('./imagenes/creandoWEb.jpg');
 background-repeat: no-repeat;
@@ -395,3 +353,126 @@ top: -100px;
   color: white;
   
  }
+ /*menu*/
+ .burger {
+  display: flex;
+  float: right;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background:transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.burger input {
+display: none;
+}
+
+.burger span {
+  margin-top: 25px;
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background:white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+                                           /*para mobile responsive diseñooooooooooooo*/
+@media screen and (max-width:1500px){
+  .navegation{
+    display: none;
+  }
+.burger{
+  display: block;
+  position:relative;
+margin-top: -10px;
+}
+ 
+ 
+}
+
+@media screen and (max-width:1500px){
+  .mifoto{
+  margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: #29F8F3;
+    border-radius: 50%;
+    
+  }
+}
+@media screen and (max-width:1000px){
+  .primeraPortada{
+    display: inline-block;  
+  }
+ .titulo{
+padding-left: 50px;
+  margin-top: -90px;
+ } 
+}
+@media screen and (max-width: 1000px) {
+  .segundoPortal svg text{
+  font-size: 25px;
+  }
+
+  .tiposDeWeb{
+    display: inline-block;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+ .webs p{
+  
+display: none;
+ }
+ .dominios svg text{
+font-size: 25px;
+ }
+ .dominio{
+  margin-left: -200px;
+  margin-top: 150px;
+ display: inline-block;
+
+ }
+}

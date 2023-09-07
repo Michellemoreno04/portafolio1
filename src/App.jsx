@@ -41,10 +41,15 @@ export function Navegation() {
         <Link to="/informacion" className="Link">Informacion</Link>
         <Link to="/contacto" className="Link">Contacto</Link>
         <Link to="/proyectos" className="Link">Proyectos</Link>
-      
+ 
         </div>
-        
-       
+
+        <label className="burger" htmlFor="burger">
+  <input type="checkbox" id="burger"/>
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
       </div>   
       
   )
@@ -76,13 +81,13 @@ export  const Rutas= () => {
 }
  const MiFoto = () =>{
   return(
-   
+   <div className="primeraPortada">
+    <img src={mifoto} className="mifoto"/>
     <div className="titulo" >
-      
-      <img src={mifoto} className="mifoto"/>
       <h2>Hola!, soy Michelle Moreno soy diceñador y desarrollador de software.</h2>
-<button className="btn1">Contacto</button>
+<button className="btn-creandoWeb">Contacto</button>
 
+    </div>
     </div>
     
   )
@@ -92,7 +97,7 @@ const SegundoPortal = ()=>{
   return(
     <div className="segundoPortal">
 <div className="wrapper">
-	<svg>
+	<svg >
 		<text x="50%" y="50%" dy=".35em" textAnchor="middle">
 			Diseñador y Programador web
      
