@@ -137,3 +137,15 @@
   .input{
     font-size: 15px;
   }
+  /*responsive para mobiles*/
+  @media screen and (max-width:1000px){
+    .form{
+      align-items: center;
+      display: inline-block;
+      width: 300px;
+    
+    }
+    .input{
+      margin-bottom:25px ;
+    }
+    }

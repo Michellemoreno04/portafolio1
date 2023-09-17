@@ -1,11 +1,10 @@
 
 
-/*body{
+body{
   background-image: url("imagenes/bg_matriz.jpg");
   background-size: cover;
-  
+  margin:0px;
 }
-*/
 
 .home{
   color: white;
@@ -20,6 +19,22 @@
 
 }
 
+.fotoPerfil{
+  width: 70px;
+  height: 70px;
+  border-radius:50%;
+  border: solid;
+position: absolute;
+left: 100px;
+top: 5px;
+}
+.nombre{
+  position: absolute;
+  left: 200px;
+  top: 25px;
+  font-size: 25px;
+  font-family:serif;
+} 
 /*opciones*/
 .Link{
   color: white;
@@ -68,7 +83,7 @@
 }
 .titulo h2{
   display: flex;
-  margin-top: 200px;
+  margin-top: 100px;
 }
                                /*EL BACKGR DEL PORTAFOLIO EN PROYECTOS*/
 .titulo_del_portafolio{
@@ -199,8 +214,9 @@ font-size: 25px;
 .tiposDeWeb{
   display: flex;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 100px;
   justify-content: center;
+  
   }   
 .webs{
 width: 300px;
@@ -214,8 +230,9 @@ width: 300px;
   backdrop-filter: blur(50px);
 }  
 .webs h4{
- color: #29F8F3;
+  color: #fff;
  text-decoration:underline;
+
   }        
 .webs:hover{
   box-shadow:  #29F8F3 5px 5px 25px 5px;
@@ -267,27 +284,22 @@ svg text {
 }
 
 
-.creandoWeb{
-background-image: url('./imagenes/creandoWEb.jpg');
-background-repeat: no-repeat;
-background-size:cover;
+.tecnologia{
+
 width: 100%;
 height: 500px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: -300px;
+text-align: center;
+margin-top: -400px;
 
 }
 .spanText{
-  position: relative;
-  bottom: 65px;
+
 color: white;
 font-size: 50px;
 
+
 }
-.btn-creandoWeb {
+.btn-contacto {
   position: relative;
   font-size: 17px;
   text-transform: uppercase;
@@ -304,17 +316,17 @@ font-size: 50px;
   cursor: pointer;
  }
  
- .btn-creandoWeb:hover {
+ .btn-contacto:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
  }
  
- .btn-creandoWeb:active {
+ .btn-contacto:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
  }
  
- .btn-creandoWeb::after {
+ .btn-contacto::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -327,11 +339,11 @@ font-size: 50px;
   transition: all .4s;
  }
  
- .btn-creandoWeb::after {
+ .btn-contacto::after {
   background-color: white;
  }
  
- .btn-creandoWeb:hover::after {
+ .btn-contacto:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
  }
@@ -357,7 +369,8 @@ top: -100px;
  .burger {
   display: flex;
   float: right;
-  position: relative;
+  position: absolute;
+  top: 5px;
   width: 40px;
   height: 30px;
   background:transparent;
@@ -417,20 +430,43 @@ display: none;
   left: 5px;
 }
                                            /*para mobile responsive diseñooooooooooooo*/
-@media screen and (max-width:1500px){
+@media screen and (max-width:1000px){
   .navegation{
     display: none;
   }
 .burger{
   display: block;
-  position:relative;
+position: absolute;
+z-index: 1px;
+right: 10px;
 margin-top: -10px;
 }
- 
- 
+
+.btn-navbar-mobile{
+color: white;
+display:flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+background-color: rgba(255, 255, 255, 0.201);
+margin-bottom: 5px;
+text-decoration: none;
+font-size: 20px;
+
+}  
+
+.active{
+  display: none;
 }
 
-@media screen and (max-width:1500px){
+}
+@media screen and (min-width:1000px) {
+  .navegation-mobile{
+    display: none;
+  }
+  
+}
+@media screen and (max-width:1000px){
   .mifoto{
   margin-left: 50px;
     width: 300px;
@@ -453,26 +489,147 @@ padding-left: 50px;
   .segundoPortal svg text{
   font-size: 25px;
   }
-
-  .tiposDeWeb{
-    display: inline-block;
-    margin-top: -50px;
+ 
+}
+@media screen and (max-width:1000px){
+.webs{
+  width: 75px;
+  height: 75px;
+  font-size: 15px;
     display: flex;
-    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+   margin-bottom: 25px;
+   margin-top: 15px;
+   padding-top: 20px;
+}
+.webs7{
+  position: relative;
+  right: 130px;
+  width: 105px;
+color: white;
+  height: 115px;
+  font-size: 15px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+   top: 15px;
+}
+.explicacion{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  left: 100px;
+top: 100px;
+color: #fff;
+
+}
+.ui_img2{
+  position: relative;
+  bottom: 50px;
+  width: 200px;
+  height: 200px;
+  left: 50px;
+  
+}
+.funcioneswebs{
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+  border-radius: 500px 0 0 0 ;
+
+}
+.tiposDeWeb{
+  width: 100%;
+  height: auto;
+ margin-top: -50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.webs p{
+display: none;
+
+}
+
+
+}
+
+@media screen and (min-width:1000px) {
+  .ui_img2{
+    display: none;
+  }
+  .explicacion{
+display: none;
+  }
+  }
+@media screen and (max-width:1000px){
+  .proyectos{
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+margin-bottom: 10px;
+  }
+}
+
+.img-tecnologias{
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin: 5px 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+@media screen and  (max-width:1000px) {
+  .tecnologia{
+    height: auto;
+    position: relative;
+   
+  background-color: #1CB5E0;
+  
+  }
+}
+@media screen and  (max-width:1000px) {
+  .navegation{
+    display: block;
+  }
+  .Link{
+    display: none;
+  }
+  .fotoPerfil{
+position: relative;
+left: 15px;
+
+  }
+  .nombre{
+    position: absolute;
+    left: 110px;
+    
+  }
+  
+}
+/*pie de pagina*/
+.pieDePagina{
+  display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  font-size:larger;
+  width: 100%;
+  height: 250px;
+  background-color:rgba(45, 45, 45, 0.986);
+}
+@media screen and (max-width:1000px){
+  .pieDePagina label{
+   position: absolute;
+   margin-left: 50px;
   }
- .webs p{
-  
-display: none;
- }
- .dominios svg text{
-font-size: 25px;
- }
- .dominio{
-  margin-left: -200px;
-  margin-top: 150px;
- display: inline-block;
 
- }
 }

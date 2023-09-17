@@ -35,7 +35,7 @@ export const Contacto = () =>{
         <span>Confirm password</span>
     </label>
     <button className="submit">Submit</button>
-    <p className="signin">Already have an acount ? <a href="#">Signin</a> </p>
+    <p className="signin">Already have an acount ? <a href="#">Sign in</a> </p>
 </form>
 </div>
   )

@@ -9,8 +9,15 @@ import { Administrador } from "./proyectos/administrador/administrador"
 import { Chat } from "./proyectos/chat/chat"
 import { Login_chat } from "./proyectos/chat/login"
 import { Brief } from "./proyectos/Brief/brief"
-import ui_img from "./imagenes/ui_img.png"
+import { useState } from "react"
+import html_img from "./imagenes/html_icon.png"
+import css_img  from "./imagenes/CSS.png"
+import react_img from "./imagenes/React.png"
+import js_img from "./imagenes/js_icon.png"
+import wordpress from "./imagenes/wordpress.png"
 import ui_img2 from "./imagenes/ui_img2.png"
+
+
 
 
 
@@ -22,21 +29,26 @@ const Componentes = () =>{
       <MiFoto/>
       <SegundoPortal/> 
       <FotoCreandoWeb/>
-      <InfoDominios/>
+     <PieDePagina/>
     </div>
   )
 }
 
 
 export function Navegation() {
-  
+  const [menuVisible, setMenuVisible] = useState(false);
 
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible); // Cambia el estado entre true y false
+  };
   return (
     
       <div className='home'>
         
         <div className="navegation"  >
-        
+        <img src={mifoto} className="fotoPerfil"/>
+        <label className="nombre">Michelle Moreno</label>
         <Link to="/" className="Link">Home</Link>
         <Link to="/informacion" className="Link">Informacion</Link>
         <Link to="/contacto" className="Link">Contacto</Link>
@@ -44,14 +56,21 @@ export function Navegation() {
  
         </div>
 
-        <label className="burger" htmlFor="burger">
-  <input type="checkbox" id="burger"/>
+        <label className="burger" htmlFor="burger" >
+  <input type="checkbox" id="burger" checked={menuVisible} onChange={toggleMenu}/>
   <span></span>
   <span></span>
   <span></span>
 </label>
-      </div>   
-      
+<div className={`navegation-mobile ${menuVisible ? '' : 'active'}`/*esta clase esta en css*/ }> 
+        
+<Link to="/" className="btn-navbar-mobile">Home</Link>
+        <Link to="/informacion" className="btn-navbar-mobile">Informacion</Link>
+        <Link to="/contacto" className="btn-navbar-mobile">Contacto</Link>
+        <Link to="/proyectos" className="btn-navbar-mobile">Proyectos</Link>
+ 
+        </div>
+      </div>    
   )
 }
 
@@ -84,8 +103,8 @@ export  const Rutas= () => {
    <div className="primeraPortada">
     <img src={mifoto} className="mifoto"/>
     <div className="titulo" >
-      <h2>Hola!, soy Michelle Moreno soy diceñador y desarrollador de software.</h2>
-<button className="btn-creandoWeb">Contacto</button>
+      <h2>Hola!, soy Michelle Moreno soy diceñador de paginas web y desarrollador de software.</h2>
+<button className="btn-contacto">Trabajemos</button>
 
     </div>
     </div>
@@ -99,11 +118,18 @@ const SegundoPortal = ()=>{
 <div className="wrapper">
 	<svg >
 		<text x="50%" y="50%" dy=".35em" textAnchor="middle">
-			Diseñador y Programador web
+		Tipos de paginas web
      
 		</text>
 	</svg>
   <TiposDeWeb/>
+  <div className="funcioneswebs"> 
+<div className="explicacion">
+  <img src={ui_img2}  className="ui_img2"/>
+<p>Estos son solo algunos ejemplos, y hay muchos otros
+   tipos de páginas web que se adaptan a diferentes propósitos y necesidades</p>
+</div>
+    </div>
 </div>
 
     </div>
@@ -111,10 +137,9 @@ const SegundoPortal = ()=>{
 }
 
 const TiposDeWeb = ()=>{
+  
   return(
-    <div >
 
-    
     <div className="tiposDeWeb">
       
         <div className="webs">
@@ -132,7 +157,7 @@ const TiposDeWeb = ()=>{
           </div>
 
           <div className="webs">
-          <h4>Web Instituciones</h4>
+          <h4>Instituciones</h4>
         <p> Los sitios web de instituciones, como escuelas, universidades u organizaciones
            sin fines de lucro, proporcionan información sobre la institución, programas académicos, 
           eventos, noticias y recursos para estudiantes, profesores y miembros.</p>
@@ -151,16 +176,20 @@ const TiposDeWeb = ()=>{
           , agregarlos al carrito de compras y realizar transacciones seguras</p>
           </div>
           <div className="webs">
-          <h4>Noticias o revistas</h4>
+          <h4>Noticias</h4>
         <p> Estos sitios web ofrecen contenido periodístico, artículos de opinión y
            noticias sobre una variedad de temas. Pueden cubrir noticias locales, 
           internacionales, deportes, entretenimiento y más. Algunos también incluyen imágenes y videos.</p>
           </div>
-          
-    </div>
+     
+          <div className="webs7">
+          <h4>Educativa</h4>
+        
+          </div>
    
-    
-    </div>
+
+   </div>
+   
   )
 }
 
@@ -169,40 +198,30 @@ const FotoCreandoWeb = ()=>{
 
 
   return(
-    <div className="creandoWeb">
+    <div className="tecnologia">
        
-       <span className="spanText">Todas las tools para hacer la mejor web del mercado</span><br />
-       <button className="btn-creandoWeb"> Button
-</button>
+       <h2 className="spanText">Tecnologias</h2>
+ 
+     <img src={html_img}  className="img-tecnologias" />
+       <img src={css_img}  className="img-tecnologias"/>
+       <img src={js_img} className="img-tecnologias" />
+       <img src={react_img}  className="img-tecnologias"/>
+       <img src={wordpress}  className="img-tecnologias"/>
+
+  
     </div>
   )
 }
-const InfoDominios = ()=>{
+
+
+const PieDePagina = ()=>{
 
   return(
-    <div className="dominios">
-	<svg>
-		<text x="50%" y="50%" dy=".35em" textAnchor="middle">
-			Dominios y Hostin
-		</text>  
-	</svg>
-  <div className="dominio">
-<p>
-Un dominio web es una dirección única que se utiliza
- para identificar un sitio web en Internet. Es la forma en que las personas acceden
-  a un sitio web específico.
-  Nombre de dominio: El nombre de dominio es la parte principal de la dirección web que las
-   personas escriben en su navegador para visitar un sitio web.
-   Por ejemplo, en "www.ejemplo.com", "ejemplo.com" es el nombre de dominio.
-</p>
-<p>
-El hosting (también conocido como alojamiento web) es un servicio que proporciona la infraestructura
- necesaria para que un sitio web sea accesible en Internet. En otras palabras, es el lugar donde se almacenan todos los archivos 
-y datos de tu sitio web y desde donde se entregan a los visitantes cuando acceden a tu dominio
-</p>
- 
-</div>
+    <div className="pieDePagina">
+      <label>
+        Santo Domingo Este | Phone 8092065907 | Email michelmore05@gmail.com
+      </label>
+
     </div>
-    
   )
 }
