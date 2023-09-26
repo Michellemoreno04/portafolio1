@@ -1,0 +1,42 @@
+.container-boton{
+    position:fixed;
+background-color: rgba(0, 128, 0, 0.763);
+    border-radius: 50%;
+bottom: 20px;
+right: 25px;
+    z-index: 999;
+    transition: ease 1.3s;
+    animation: efecto 3.5s infinite;
+    height: auto;
+    width: max-content;
+}
+
+.btn-whatsapp{
+width:70px;
+height: 60px;
+transition: ease 3s;
+}
+.btn-whatsapp:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+@keyframes efecto {
+    0%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.993);
+    }
+    100%{
+        box-shadow:0 0 0 25px rgba(0,0,0,0);
+    }
+}
+@media screen and (max-width:1000px) {
+    .btn-whatsapp{
+        width: 55px;
+        height: 50px;
+    
+    }
+    .container-boton{
+        right: 5px;
+    
+    }
+}

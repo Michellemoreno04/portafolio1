@@ -40,10 +40,14 @@ top: 5px;
   margin: 25px;
   font-size: 25px;
   text-decoration: none;
+  margin-top: 35px;
+}
+.Link:hover{
+  text-decoration: underline;
 }
 .mifoto{
   display: flex;
-  margin-top: 50px;
+  margin-top: 60px;
   width: 800px;
 
 }
@@ -78,7 +82,7 @@ top: 5px;
 
 .titulo{
   color:  #29F8F3;
-  font-size: 30px;
+  font-size: 55px;
 }
 .titulo h2{
   display: flex;
@@ -191,8 +195,8 @@ font-size: 50px;
   border: none;
   font-family: inherit;
   font-weight: 500;
-  color: black;
-  background-color: red;
+  color:white;
+  background-color:blue;
   cursor: pointer;
  }
  
@@ -226,6 +230,13 @@ font-size: 50px;
  .btn-contacto:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+ }
+ @media screen and (max-width:1000px) {
+  .titulo h2{
+    font-size: 40px;
+    margin-left: -15px;
+  }
+  
  }
  .dominios{
   display: flex;
@@ -561,7 +572,7 @@ transform: scale(1.1);
     width: 400px;
     height: 500px;
     position: relative;
-  top: -250px;
+  top: -350px;
   
   margin-bottom: 0;
   }

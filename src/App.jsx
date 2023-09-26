@@ -1,8 +1,6 @@
 import { Link,BrowserRouter as Router,Routes,Route } from "react-router-dom"
 import mifoto from "./imagenes/ft_bg.png"
 import { Proyectos } from "./proyectos/proyectos"
-import { Contacto } from "./paginas/contacto/contacto"
-import { Informacion } from "./paginas/contacto/informacion/informacion"
 import { useState } from "react"
 import html_img from "./imagenes/html_icon.png"
 import css_img  from "./imagenes/CSS.png"
@@ -14,15 +12,19 @@ import doctor from "./imagenes/doctor.png"
 import excurcion from "./imagenes/excurcion.png"
 import restaurante from "./imagenes/restaurante.png"
 import restaurante2 from "./imagenes/restaurante2.png"
+import { Contacto } from "./contacto/contacto"
+import { Btn_whatsapp } from "./whatsapp/whatsapp"
 
 const Componentes = () =>{
   return(
     <div className="componentes">
       <Navegation/>
       <MiFoto/>
+     <Btn_whatsapp/>
       <SegundoPortal/> 
       <ProyectosHome/>
       <FotoCreandoWeb/>
+      <Contacto/>
      <PieDePagina/>
     </div>
   )
@@ -76,10 +78,7 @@ export  const Rutas= () => {
    
 <Routes>
 <Route path="/" element={<Componentes/>} />
-<Route path="/proyectos" element={<Proyectos/>} />
-<Route path="/contacto" element={<Contacto/>} /> 
-<Route path="/informacion" element={<Informacion/>} /> 
-
+ 
 </Routes>
  </Router>
 </div>
@@ -88,7 +87,7 @@ export  const Rutas= () => {
 }
  const MiFoto = () =>{
   return(
-   <div className="primeraPortada">
+   <div className="primeraPortada" id="contacto">
     <img src={mifoto} className="mifoto"/>
     <div className="titulo" >
       <h2>Hola!, soy Michelle Moreno soy diceñador de paginas web y desarrollador de software.</h2>
