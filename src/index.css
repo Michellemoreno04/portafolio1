@@ -1,8 +1,7 @@
 
 
 body{
-  background-image: url("imagenes/bg_matriz.jpg");
-  background-size: cover;
+ background-color: black;
   margin:0px;
 }
 
@@ -85,139 +84,19 @@ top: 5px;
   display: flex;
   margin-top: 100px;
 }
-                               /*EL BACKGR DEL PORTAFOLIO EN PROYECTOS*/
-.titulo_del_portafolio{
-  color: cyan;
-  font-style: italic;
-  text-align: center;
-  font-size: 50px;
-  margin-top: 0.1px;
-}
-                   /*PROYECTOS*/
-.proyectos{
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
-  border-radius: 10px;
-  margin-left: 25px;
 
-}
-                       
-.nombreDelJuego{
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-}
-.portafolio_img{
-  display: flex;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  margin-top: 5px;
-border-radius: 10px;
-
-}
-.btn-para-jugar{
-  width: 100px;
-  height: 30px;
-  border-radius: 5px;
-  color: #fff;
-  background-color:#073ceaf7;
-  margin-left: 90px;
-  margin-top: 20px;
-cursor: pointer;
-}
-.btn-para-jugar:hover{
-  background-color: #073cead8;
-  transform: scale(1.2);
-} 
-                                    /*CALCULADORA*/
-.titulo-calculadora{
-  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
-	background-size: 180% 180%;
-	animation: gradient-animation 6s ease infinite;
-  padding: 20px;
-  margin-top: -10px;
-border-radius: 50px;
-}
-.calculadora{
-  width: 600px;
-  height: 700px;
-  border: solid black;
-  margin: 0 auto;
- padding: 30px;
- background-color: rgba(0, 0, 0, 0.888);
- border-radius: 10px;
-}
-.resultado-calculado{
-width: 590px;
-height: 150px;
-margin-bottom: 50px;
-text-align: end;
-font-size: 50px;
-border-radius: 15px;
-
-}
-.resultado-calculado::placeholder{
-  font-size: 100px;
-text-align: end; /*para que se mueva a la derecha*/
-
-}
-.btn-calculadora{
-  width: 150px;
-  height: 100px;
- margin-left: 5px;
-margin-bottom: 25px;
- justify-content: center;
- align-items: center;
- cursor: pointer;
- font-size: 25px;
- background-color: white;
-
-}
-.btn-calculadora:hover{
-  transform: scale(1.1);
-  border-radius: 5%;
-  background-color: rgba(240, 248, 255, 0.781);
-}
-.btn-operadores{
-width: 125px;
-height: 100px;
-background-color: chartreuse;
-margin-left: 10px;
-cursor: pointer;
-font-size: 25px;
-}
-.btn-operadores:hover{
-  background-color:white;
-  transform: scale(1.1);
-  border-radius: 5%;
-}
-.proyectos{
-    animation: roll-in-right 0.9s ease-out both;
-}
-
- @keyframes roll-in-right {
-  0% {
-    transform: translateX(800px) rotate(540deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
-}
                                                                  /*segundo portal*/
-.tiposDeWeb{
-  display: flex;
-  margin: 0 auto;
-  margin-top: 100px;
-  justify-content: center;
   
-  }   
+  .tiposDeWeb{
+    width: 100%;
+    height: auto;
+   margin-top: -50px;
+  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
 .webs{
 width: 300px;
   font-size: 25px;
@@ -228,6 +107,8 @@ width: 300px;
   cursor: pointer;
   color:white;
   backdrop-filter: blur(50px);
+  margin-bottom: 25px;
+  margin-top: 25px;
 }  
 .webs h4{
   color: #fff;
@@ -283,13 +164,12 @@ svg text {
   text-decoration: none;
 }
 
-
 .tecnologia{
 
 width: 100%;
 height: 500px;
 text-align: center;
-margin-top: -400px;
+margin-top: -200px;
 
 }
 .spanText{
@@ -354,16 +234,6 @@ font-size: 50px;
   width: 100%;
   height: 500px;
 
- }
- .dominio{
- display: flex;
-position: relative;
-left: 200px;
-top: -100px;
-  font-size: 20px;
-  width: 1300px;
-  color: white;
-  
  }
  /*menu*/
  .burger {
@@ -502,8 +372,9 @@ padding-left: 50px;
    border-radius: 50%;
    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
    margin-bottom: 25px;
-   margin-top: 15px;
-   padding-top: 20px;
+   margin-top: 20px;
+   padding-top: 15px;
+  
 }
 .webs7{
   position: relative;
@@ -519,6 +390,47 @@ color: white;
    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
    top: 15px;
 }
+}
+
+.funcioneswebs {
+  position: relative;
+  top: 50px;
+	-webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (min-width:1100px) {
+  .funcioneswebs{
+    display: none;
+  }
+
+}
+
+
 .explicacion{
   position: relative;
   width: 300px;
@@ -545,21 +457,13 @@ color: #fff;
   border-radius: 500px 0 0 0 ;
 
 }
-.tiposDeWeb{
-  width: 100%;
-  height: auto;
- margin-top: -50px;
 
-  display: flex;
-  flex-wrap: wrap;
-  
-}
 .webs p{
-display: none;
+display: block;
 
 }
-
-
+.webs7{
+  display: none;
 }
 
 @media screen and (min-width:1000px) {
@@ -569,15 +473,8 @@ display: none;
   .explicacion{
 display: none;
   }
+
   }
-@media screen and (max-width:1000px){
-  .proyectos{
-display: flex;
-flex-direction: column;
-margin: 0 auto;
-margin-bottom: 10px;
-  }
-}
 
 .img-tecnologias{
   width: 150px;
@@ -589,12 +486,15 @@ margin-bottom: 10px;
 }
 @media screen and  (max-width:1000px) {
   .tecnologia{
-    height: auto;
+    height: 500px;
     position: relative;
-   
-  background-color: #1CB5E0;
+  top: -100px;
   
   }
+  .webs p{
+    display: none;
+  }
+
 }
 @media screen and  (max-width:1000px) {
   .navegation{
@@ -607,6 +507,7 @@ margin-bottom: 10px;
 position: relative;
 left: 15px;
 
+top: 15px;
   }
   .nombre{
     position: absolute;
@@ -632,4 +533,45 @@ left: 15px;
    margin-left: 50px;
   }
 
+}
+.paginas-proyectos{
+  position: relative;
+  bottom: 150px;
+  width: 100%;
+  height: 850px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;/*esto es para que se acomoden dentro del cuadro y no se salgan*/
+}
+.img-proyectos{
+  position: relative;
+  left:200px;
+  width: 400px;
+  height: 250px;
+  margin: 15px;
+cursor: pointer;
+border: solid white;;
+}
+.img-proyectos:hover{
+transform: scale(1.1);
+}
+@media screen and (max-width:1000px) {
+  .paginas-proyectos{
+    width: 400px;
+    height: 500px;
+    position: relative;
+  top: -250px;
+  
+  margin-bottom: 0;
+  }
+  .img-proyectos{
+    position: relative;
+    width: 150px;
+    height: 100px;
+   left: 30px;
+  }
+  .wrapper svg text{
+font-size: 25px;
+  }
 }

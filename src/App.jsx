@@ -3,12 +3,6 @@ import mifoto from "./imagenes/ft_bg.png"
 import { Proyectos } from "./proyectos/proyectos"
 import { Contacto } from "./paginas/contacto/contacto"
 import { Informacion } from "./paginas/contacto/informacion/informacion"
-import { Tablero } from "./proyectos/tic tac toe/tablero"
-import { Calculadora } from "./proyectos/calculadora/calculadora"
-import { Administrador } from "./proyectos/administrador/administrador"
-import { Chat } from "./proyectos/chat/chat"
-import { Login_chat } from "./proyectos/chat/login"
-import { Brief } from "./proyectos/Brief/brief"
 import { useState } from "react"
 import html_img from "./imagenes/html_icon.png"
 import css_img  from "./imagenes/CSS.png"
@@ -16,11 +10,10 @@ import react_img from "./imagenes/React.png"
 import js_img from "./imagenes/js_icon.png"
 import wordpress from "./imagenes/wordpress.png"
 import ui_img2 from "./imagenes/ui_img2.png"
-
-
-
-
-
+import doctor from "./imagenes/doctor.png"
+import excurcion from "./imagenes/excurcion.png"
+import restaurante from "./imagenes/restaurante.png"
+import restaurante2 from "./imagenes/restaurante2.png"
 
 const Componentes = () =>{
   return(
@@ -28,6 +21,7 @@ const Componentes = () =>{
       <Navegation/>
       <MiFoto/>
       <SegundoPortal/> 
+      <ProyectosHome/>
       <FotoCreandoWeb/>
      <PieDePagina/>
     </div>
@@ -85,13 +79,7 @@ export  const Rutas= () => {
 <Route path="/proyectos" element={<Proyectos/>} />
 <Route path="/contacto" element={<Contacto/>} /> 
 <Route path="/informacion" element={<Informacion/>} /> 
-<Route path="/tablero" element={<Tablero/>} /> 
-<Route path="/calculadora" element={<Calculadora/>} /> 
-<Route path="/administrador" element={<Administrador/>} />
-<Route path="/login-chat" element={<Login_chat/>} />  
-<Route path="/chat" element={<Chat/>} /> 
-<Route path="/brief" element={<Brief/>} /> 
-    
+
 </Routes>
  </Router>
 </div>
@@ -192,10 +180,35 @@ const TiposDeWeb = ()=>{
    
   )
 }
+const ProyectosHome = ()=>{
+  return(
+    <div className="paginas-proyectos">
+      <div className="wrapper">
+	<svg >
+		<text x="50%" y="50%" dy=".35em" textAnchor="middle">
+		Paginas creadas
+     
+		</text>
+	</svg>
+  </div>
+<Link to={"https://amigodoctor.com/inicio/"} target="_blank">
+<img src={doctor} className="img-proyectos" />
+</Link>
+<Link  to={"https://www.goingpartyboatpuntacana.com/?goingpartyboatpuntacana_com&gclid=CjwKCAjw6p-oBhAYEiwAgg2PgoyiscwHiDYHwsN5PmShZJQpI--e6JgBM2VWFMsxO9q6xhXHfz_lwhoCEXgQAvD_BwE"} target="_blank">
+<img src={excurcion} className="img-proyectos"/>
+</Link>
+<Link to={"https://www.sweetbasilvail.com/"} target="_blank">
+<img src={restaurante} className="img-proyectos"/>
+</Link>
+<Link to={"https://www.elatelierderafa.com/"} target="_blank"> 
+<img src={restaurante2} className="img-proyectos"/>
+</Link>
+
+    </div>
+  )
+}
 
 const FotoCreandoWeb = ()=>{
-
-
 
   return(
     <div className="tecnologia">
