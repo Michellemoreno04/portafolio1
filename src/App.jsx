@@ -26,6 +26,7 @@ const Componentes = () =>{
       <FotoCreandoWeb/>
       <Contacto/>
      <PieDePagina/>
+     
     </div>
   )
 }

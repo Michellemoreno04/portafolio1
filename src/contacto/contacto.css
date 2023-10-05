@@ -63,6 +63,7 @@
   .contact-form button[type="submit"]:hover {
     transform: scale(1.03);
     transition: transform 0.3s ease-in-out;
+    background-color: #ff6385eb;
   }
   
   @media screen and (max-width:1000px) {
@@ -75,4 +76,9 @@
       width: 285px;
       height: 150px;
     }
+  }
+  span{
+    position: relative;
+   
+    color: #ff6384;
   }
